@@ -1,7 +1,6 @@
 import Appcard from "../components/card";
 import Applayout from "../components/layout";
 
-
 const Dashboard = () => {
     return (
     <div className="container">

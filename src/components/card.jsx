@@ -1,23 +1,21 @@
 import { Card, Col, Row } from 'antd';
+import Appcarousel from "../components/carousel"
 
 const Appcard = () => (
   <Row gutter={16}>
     <Col span={8}>
-      <Card title="greeting 1" bordered={false}>
-      <h1>hey</h1>
-      <p>how are you</p>
+      <Card title="option 1" bordered={false}>
+      <Appcarousel/>
       </Card>
     </Col>
     <Col span={8}>
-      <Card title="greeting 2" bordered={false}>
-     <h1>hi</h1>
-     <p>how is going</p>
+      <Card title="option 2" bordered={false}>
+      <Appcarousel/>
       </Card>
     </Col>
     <Col span={8}>
-      <Card title="greeeting 3" bordered={false}>
-    <h1>hello</h1>
-    <p>how are you doing</p>
+      <Card title="option 3" bordered={false}>
+      <Appcarousel/>
       </Card>
     </Col>
   </Row>
