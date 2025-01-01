@@ -1,11 +1,13 @@
 import './App.css';
-import { Button } from 'antd'; 
+import Applayout from './components/layout'; 
 
 function App() {
   return (
-    <div>
- <Button type="primary">Click Me</Button>
+<div>
+    <div className='container'>
+     <Applayout/>
     </div>
+</div>
   );
 }
 
