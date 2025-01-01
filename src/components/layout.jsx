@@ -12,7 +12,6 @@ import Logo from "../assets/smit-logo.png";
 const { Header, Sider, Content } = Layout;
 
 const Applayout = ({children}) => {
-
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
