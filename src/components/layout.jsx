@@ -7,10 +7,12 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme } from 'antd';
-import IMG from "../assets/smit-logo.png";
+import Logo from "../assets/smit-logo.png";
+
 const { Header, Sider, Content } = Layout;
 
-const Applayout = () => {
+const Applayout = ({children}) => {
+
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -21,8 +23,9 @@ const Applayout = () => {
       height : "100vh",
     }} >
       <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical">
-        <img src={IMG} alt="smit-logo" id='img'/>
+        <div className="logo-container
+        demo-logo-vertical">
+        <img width={"100px"} src={Logo} alt="smit-logo"/>
         </div>
         <Menu
           theme="dark"
@@ -74,7 +77,7 @@ const Applayout = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, laboriosam nihil. Eaque corrupti debitis possimus deserunt repellendus et praesentium, voluptates molestias eius error ipsam modi voluptate nesciunt consectetur repellat! Ex!
+        {children}
         </Content>
       </Layout>
     </Layout>

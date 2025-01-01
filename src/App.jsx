@@ -1,13 +1,11 @@
 import './App.css';
-import Applayout from './components/layout'; 
+import Dashboard from './components/dashboard'; 
 
 function App() {
   return (
-<div>
-    <div className='container'>
-     <Applayout/>
-    </div>
-</div>
+  <div>
+    <Dashboard/>
+  </div>
   );
 }
 
