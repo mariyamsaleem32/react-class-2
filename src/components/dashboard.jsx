@@ -7,32 +7,45 @@ class Button extends Component {
      super()
     this.state = {
     myName : "mariyam"
-    }
-    
+    } 
   }
-  abc(){
-console.log("hi");
 
+  updateName= () => {
+console.log(this.state.myName);
+this.setState(
+  {
+    myName : "fatima"
   }
-render(){
- 
-  const {children} = this.props;
+)
+  }
+
+render() {
+  // const {children} = this.props;
   return (
-  // <button onClick={this.abc}>{children}</button>
-  <h1>{this.state.myName}</h1>
+    <div>
+     <h1>{this.state.myName}</h1>
+     <button onClick={this.updateName}>
+      update 
+     </button>
+     </div>
   )
 }
 }
+
 class Dashboard extends Component {
   constructor(){
     super()
   }
 
-  render(){
+  render() {
     return (
-      <div>
-        <Button>click me</Button>
-        <Button>update me</Button>
+      <div 
+      style={{
+        textAlign : 'center',
+        padding : '15px',
+        fontSize : '26px'
+      }}>
+        <Button/>
       </div>
     )
   }
