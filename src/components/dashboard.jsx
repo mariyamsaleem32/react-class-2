@@ -6,7 +6,7 @@ class Button extends Component {
   constructor(){
      super()
     this.state = {
-    myName : "mariyam"
+    myName : "MARIYAM"
     } 
   }
 
@@ -14,7 +14,7 @@ class Button extends Component {
 console.log(this.state.myName);
 this.setState(
   {
-    myName : "fatima"
+    myName : "FATIMA"
   }
 )
   }
@@ -25,7 +25,7 @@ render() {
     <div>
      <h1>{this.state.myName}</h1>
      <button onClick={this.updateName}>
-      update 
+      update
      </button>
      </div>
   )
