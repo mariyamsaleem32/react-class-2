@@ -1,8 +1,18 @@
-.container{
-height: 100vh;
+.main{
+padding: 25px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
 }
 
-.logo-container{
-  text-align: center;
-  padding : 5px;
+button{
+  background-color: rgb(235, 35, 35);
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  height: 30px;
+}
+
+input{
+  height: 30px;
 }
